@@ -17,5 +17,8 @@ jobs:
         run: composer install
         working-directory: framework/core
 
+      - name: Install Composer dependencies
+        run: composer install
+
       - name: Run tests
         run: vendor/bin/supercharge phpunit --directory=framework/core -c tests/phpunit.integration.xml
