@@ -76,7 +76,7 @@ class SetupScript
 
     public function __construct()
     {
-        $this->host = getenv('DB_HOST') ?: '127.0.0.1';
+        $this->host = getenv('DB_HOST') ?: 'localhost';
         $this->port = intval(getenv('DB_PORT') ?: 3306);
         $this->name = getenv('DB_DATABASE') ?: 'flarum_test';
         $this->user = getenv('DB_USERNAME') ?: 'root';

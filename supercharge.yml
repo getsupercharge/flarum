@@ -9,3 +9,6 @@ beforeCommands:
   - mysql -uroot -e 'DROP DATABASE if exists flarum_test;'
   - mysql -uroot -e 'CREATE DATABASE flarum_test;'
   - php tests/integration/setup.php
+
+environment:
+  DB_PASSWORD: ''
