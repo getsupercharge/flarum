@@ -6,5 +6,6 @@ ignorePaths:
   - node_modules/*
 
 beforeCommands:
+  - mysql -uroot -e 'DROP DATABASE if exists flarum_test;'
   - mysql -uroot -e 'CREATE DATABASE flarum_test;'
   - php tests/integration/setup.php
