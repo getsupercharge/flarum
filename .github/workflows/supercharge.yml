@@ -22,3 +22,5 @@ jobs:
 
       - name: Run tests
         run: vendor/bin/supercharge phpunit --directory=framework/core -c tests/phpunit.integration.xml
+        env:
+          SUPERCHARGE_TOKEN: ${{ secrets.SUPERCHARGE_TOKEN }}
