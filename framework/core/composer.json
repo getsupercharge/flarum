@@ -94,7 +94,7 @@
         "wikimedia/less.php": "^4.1"
     },
     "require-dev": {
-        "flarum/testing": "^2.0",
+        "flarum/testing": "dev-supercharge",
         "symfony/var-dumper": "^6.3"
     },
     "autoload": {
