@@ -18,4 +18,4 @@ jobs:
         working-directory: framework/core
 
       - name: Run tests
-        run: supercharge phpunit --directory=framework/core -c=tests/phpunit.integration.xml
+        run: supercharge phpunit --directory=framework/core -c tests/phpunit.integration.xml
