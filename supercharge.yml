@@ -1,0 +1,10 @@
+ignorePaths:
+  - resources/audio/*
+  - resources/css/*
+  - resources/fonts/*
+  - resources/img/*
+  - node_modules/*
+
+beforeCommands:
+  - mysql -uroot -proot -e 'CREATE DATABASE flarum_test;'
+  - php tests/integration/setup.php
