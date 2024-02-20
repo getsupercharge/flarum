@@ -1,3 +1,5 @@
+project: flarum
+
 ignorePaths:
   - resources/audio/*
   - resources/css/*
