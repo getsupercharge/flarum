@@ -1,6 +1,11 @@
 name: Supercharge tests
 
-on: [workflow_dispatch, push, pull_request]
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   test:
